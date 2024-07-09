@@ -64,4 +64,6 @@ $ npm run test:cov
 + This app is used to track amount of food items in a warehouse, CRUD operations for relevant items, and creating menu(s) and dropping multiple items in terms of items in created menus, listing served menus, dropping independent (unary) items adding staff with detailed information, preventing interaction between fired staff and this system (deleting staff is not added due to relations between some entities, but deleting food items are enabled.) Except deleting staff, other operations are ready to be used in this project. 
 
 + Role based authorization is performed in this application, so if a staff is assigned as "Admin", relevant staff can access to every route in this app, but assigning as "User", or an ordinary staff, brings some prohibitions about accessing routes. This action is performed by help of UseGuards decoration.
++ General authorization is implemented as cookie based. 
+
 
